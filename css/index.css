@@ -1,0 +1,53 @@
+.gameboard{
+    width: 372px;
+    height: 372px;
+    margin: auto;   
+}
+
+.square{
+    float: left;
+    background: rgba(255, 255 ,255, .9);
+    width: 122px;
+    height: 122px;
+    border: 1px solid grey;
+    -moz-box-shadow: 8px 8px 15px grey;
+    -webkit-box-shadow: 8px 8px 15px grey;
+    box-shadow: 8px, 8px, 15px, grey;
+    cursor: pointer;
+    text-align: center;
+    font-size: 100px;
+    text-color:grey;
+}
+
+.ex{
+    background-color: white;
+}
+
+.oh{
+    background-color: white;
+}
+
+body{
+    background: no-repeat center center fixed;
+    background: url(#);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.spacer{
+    padding: 5%;
+    text-align: center;
+    text-shadow: 1px 1px 2px grey, 0  0  1em  grey, 0 0 0.2em grey;
+    color: white;
+    font: 2em Helvetica, san serif;
+}
+
+.btn{
+    -webkit-box-shadow: 8px 8px 15px grey;
+    -moz-box-shadow: 8px 8px 15px grey;
+    -o-box-shadow: 8px 8px 15px grey;
+    box-shadow: 8px 8px 15px grey;
+}
