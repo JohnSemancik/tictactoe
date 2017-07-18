@@ -11,10 +11,10 @@ $(document).ready(function(){
     $('.square').on('click', function(event){
         var squareSelected = $(this);
         if(squareSelected.hasClass('ex') || squareSelected.hasClass('oh')){
-            alert('This square is occupied!')
+            alert('This square is occupied!');
         }else{
             if(player===1){
-                squareSelected.addClass('ex').append('<i class="fa fa-times" aria-hidden="true"></i>')
+                squareSelected.addClass('ex').append('<i class="fa fa-times" aria-hidden="true"></i>');
                 if(didIWin('ex')){
                     $('#gameboard').hide();
                     $('#reload').show();
@@ -45,7 +45,7 @@ $(document).ready(function(){
         }
         
         
-    })
+    });
     
     function randomSquare(rand){
       while($(tag).hasClass('ex') || $(tag).hasClass('oh')){
@@ -54,7 +54,7 @@ $(document).ready(function(){
         //This is where code goes to make game more challenging.
       } 
       return tag;
-    };
+    }
     
     function didIWin(symbol){
         if($('.sq1').hasClass(symbol) && $('.sq2').hasClass(symbol) && $('.sq3').hasClass(symbol)){
@@ -77,4 +77,4 @@ $(document).ready(function(){
         return false;
     }
     }
-})    
+});    
